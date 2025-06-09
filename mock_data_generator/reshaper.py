@@ -21,7 +21,7 @@ def reshape_to_long(
 
     The "wide" dataframe is expected to have one column per time series.
     The "long" result groups columns that correspond to the same metric
-    but different sources (e.g. different cells) into a single column,
+    but different sources (e.g. different sensors) into a single column,
     with another column specified for.
 
     If any args are not provided, the user will be prompted to enter them through the command line.
