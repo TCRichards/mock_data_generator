@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "mock-data-generator"
+version = "1.0"
+description = ""
+authors = ["Thomas Richards <thomas.c.richards@outlook.com>"]
+packages = [{include = "mock_data_generator"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^2.2.1"
+matplotlib = "^3.8.3"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.6.1"
+ruff = "^0.2.2"
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+extend-select = [
+  "I",      # isort
+  "D",      # pydocstyle
+  "E501"    # line-length-too-long
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
