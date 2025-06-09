@@ -63,7 +63,7 @@ The following steps describe how you might create 10-minute-long voltage and tem
    3. Let's assume these sensors all share the same a `site_index` and a `sensor_pack_index`, but are distinguished by a `sensor_index`.  The `site_index` and `sensor_pack_index` are constant columns which you'll be prompted to set using a comma-separated list of assignments (e.g. `site_index=100, sensor_pack_index=200`).
 ![Command Line Arguments](docs/args.png).
 
-3. You'll be prompted to provide a name for the first timeseries.  Name it "v1".  Afterwards, an interactive canvas will appear where you can click to draw values for the series at the allowed x intervals.
+3. You'll be prompted to provide a name for the first timeseries.  Name it "v1".  Afterwards, an interactive canvas will appear where you can click to draw values for the series at the allowed x intervals.  You don't have to click on every x interval -- the program will snap your click to the nearest interval, and linearly interpolate the values between the last selection and the next.
 
 ![name_series](docs/name_series.png)
 
